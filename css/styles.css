@@ -236,55 +236,11 @@ section h2 {
 }
 
 @media (hover: none) {
-  .skills-grid-contents,
-  .skills-grid-contents-off,
-  .skills-grid-contents-off-noh,
-  .skills-grid-contents-off-noh-py {
-    position: relative;
-    padding: 20px;
-    background-color: var(--card-bg);
-    box-shadow: var(--shadow-sm);
-    border-radius: var(--radius);
-    cursor: pointer;
-    transition: transform var(--transition);
-    font-size: clamp(13px, 2.5vw, 16px);
-  }
-
   .skills-grid-contents:active,
   .skills-grid-contents-off:active,
   .skills-grid-contents-off-noh:active,
   .skills-grid-contents-off-noh-py:active {
     transform: translateY(-8px);
-  }
-
-  .skills-grid-contents::after {
-    content: "✓";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    color: green;
-    font-weight: bold;
-  }
-  .skills-grid-contents:hover::after {
-    opacity: 1;
-  }
-
-  .skills-grid-contents-off::after,
-  .skills-grid-contents-off-noh::after,
-  .skills-grid-contents-off-noh-py::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    font-size: 16px;
-    transition: opacity 0.3s;
-    font-weight: bold;
   }
 
   .skills-grid-contents-off:active::after {
@@ -372,61 +328,60 @@ section h2 {
 }
 
 /* Hover image reveal — only on non-touch devices */
-@media (hover: hover) {
-  .projects-item:hover {
-    background-image: url("../images/Nine Cups.JPG");
-    background-size: cover;
-    background-position: center;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-10px);
-    color: rgba(0, 0, 0, 0);
-  }
+/* @media (hover: hover) {} */
+.projects-item:hover {
+  background-image: url("../images/Nine Cups.JPG");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-10px);
+  color: rgba(0, 0, 0, 0);
+}
 
-  .projects-item-valentines:hover {
-    background-image: url("../images/Valentines.JPG");
-    background-size: cover;
-    background-position: center;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-10px);
-    color: rgba(0, 0, 0, 0);
-  }
+.projects-item-valentines:hover {
+  background-image: url("../images/Valentines.JPG");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-10px);
+  color: rgba(0, 0, 0, 0);
+}
 
-  .projects-item-happy:hover {
-    background-image: url("../images/happy-new-year.JPG");
-    background-size: cover;
-    background-position: center;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-10px);
-    color: rgba(0, 0, 0, 0);
-  }
+.projects-item-happy:hover {
+  background-image: url("../images/happy-new-year.JPG");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-10px);
+  color: rgba(0, 0, 0, 0);
+}
 
-  .projects-item-goit:hover {
-    background-image: url("../images/hero.JPG");
-    background-size: cover;
-    background-position: center;
-    box-shadow: var(--shadow-md);
-    transform: translateY(-10px);
-    color: rgba(0, 0, 0, 0);
-  }
+.projects-item-goit:hover {
+  background-image: url("../images/hero.JPG");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-10px);
+  color: rgba(0, 0, 0, 0);
+}
 
-  .projects-item a:hover,
-  .projects-item-happy a:hover {
-    transform: scale(1.2);
-    filter: brightness(1.3);
-  }
+.projects-item a:hover,
+.projects-item-happy a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
 
-  .projects-item-valentines a:hover {
-    transform: scale(1.2);
-    color: #000000;
-    filter: brightness(1.3);
-  }
+.projects-item-valentines a:hover {
+  transform: scale(1.2);
+  color: #000000;
+  filter: brightness(1.3);
+}
 
-  .projects-item-happy a:hover,
-  .projects-item-goit a:hover {
-    transform: scale(1.2);
-    color: #f70000;
-    filter: brightness(1.3);
-  }
+.projects-item-happy a:hover,
+.projects-item-goit a:hover {
+  transform: scale(1.2);
+  color: #f70000;
+  filter: brightness(1.3);
 }
 
 @media (hover: none) {
