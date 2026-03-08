@@ -358,7 +358,7 @@ section h2 {
   filter: brightness(1.3);
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
   .projects-item:active {
     background-image: url("../images/Nine Cups.JPG");
     background-size: cover;
@@ -413,7 +413,7 @@ section h2 {
     color: #f70000;
     filter: brightness(1.3);
   }
-}
+} */
 
 /* ===== CONTACT ===== */
 .contact ul {
