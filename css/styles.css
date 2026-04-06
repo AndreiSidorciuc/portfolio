@@ -232,9 +232,9 @@ section h2 {
 }
 
 .skills-grid-contents-off-noh:hover::after {
-  content: "28% ×";
+  content: "60% ×";
   opacity: 1;
-  color: red;
+  color: rgb(12, 0, 179);
 }
 
 .skills-grid-contents-off-noh-py:hover::after {
